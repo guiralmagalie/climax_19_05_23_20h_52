@@ -1,6 +1,6 @@
 package com.climax.climax.readFiles;
 
-import com.climax.climax.Employe;
+import com.climax.climax.model.Employe;
 import com.climax.climax.inteface.FileRead;
 
 import java.io.BufferedReader;
