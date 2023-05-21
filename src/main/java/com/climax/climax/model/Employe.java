@@ -17,16 +17,16 @@ public class Employe extends AbstractId implements Serializable {
     @Column(name = "nom", nullable = false, unique = true)
     private String nom;
     @NotNull
-    @Column(name = "prenom", nullable = false, unique = true)
+    @Column(name = "prenom", nullable = false, unique = false)
     private String prenom;
     @NotNull
-    @Column(name = "age", nullable = false, unique = true)
+    @Column(name = "age", nullable = false, unique = false)
     private int age;
     @NotNull
-    @Column(name = "profession", nullable = false, unique = true)
+    @Column(name = "profession", nullable = false, unique = false)
     private String profession;
     @NotNull
-    @Column(name = "salaire", nullable = false, unique = true)
+    @Column(name = "salaire", nullable = false, unique = false)
     private int salaire;
 
     public Employe() {

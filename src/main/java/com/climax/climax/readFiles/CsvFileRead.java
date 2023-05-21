@@ -4,14 +4,15 @@ import com.climax.climax.model.Employe;
 import com.climax.climax.inteface.FileRead;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CsvFileRead implements FileRead {
-    @Override
-    public List<Employe> readFile(String filePath) {
+
+    public List<Employe> readFile(File filePath) {
         List<Employe> employes = new ArrayList<>();
 
         try (BufferedReader buffer = new BufferedReader(new FileReader(filePath))) {
@@ -31,6 +32,12 @@ public class CsvFileRead implements FileRead {
             // Gérer les erreurs de lecture du fichier
             e.printStackTrace();
         }
+        return employes;
+    }
+
+    @Override
+    public List<Employe> readFile(String filePath) {
+        List<Employe> employes = new ArrayList<>();
         return employes;
     }
 }

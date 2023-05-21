@@ -6,10 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import com.climax.climax.readFiles.CsvFileRead;
+
+import javax.servlet.annotation.MultipartConfig;
 import java.util.List;
 
 @SpringBootApplication
+@MultipartConfig
 public class ClimaxApplication {
 
 
